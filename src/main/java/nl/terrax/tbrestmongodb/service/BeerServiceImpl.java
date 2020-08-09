@@ -1,6 +1,6 @@
 package nl.terrax.tbrestmongodb.service;
 
-import nl.terrax.tbrestmongodb.domain.Beer;
+import nl.terrax.tbrestmongodb.model.Beer;
 import nl.terrax.tbrestmongodb.repository.BeerRepository;
 import io.micronaut.transaction.annotation.ReadOnly;
 import org.bson.types.ObjectId;

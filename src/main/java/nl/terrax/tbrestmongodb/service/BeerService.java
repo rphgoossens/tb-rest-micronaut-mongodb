@@ -1,6 +1,6 @@
 package nl.terrax.tbrestmongodb.service;
 
-import nl.terrax.tbrestmongodb.domain.Beer;
+import nl.terrax.tbrestmongodb.model.Beer;
 import org.bson.types.ObjectId;
 
 import javax.validation.constraints.NotEmpty;

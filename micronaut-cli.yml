@@ -1,5 +1,6 @@
-profile: service
-defaultPackage: example.micronaut
----
+applicationType: default
+defaultPackage: nl.terrax.tbrestmongodb
 testFramework: junit
 sourceLanguage: java
+buildTool: maven
+features: [app-name, docker, file-watch, http-client, java, java-application, junit, logback, maven, mongo-reactive, netty-server, readme, shade, yaml]

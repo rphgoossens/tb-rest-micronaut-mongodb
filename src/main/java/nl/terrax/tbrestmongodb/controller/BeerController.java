@@ -1,10 +1,10 @@
 package nl.terrax.tbrestmongodb.controller;
 
-import nl.terrax.tbrestmongodb.domain.Beer;
-import nl.terrax.tbrestmongodb.service.BeerService;
 import io.micronaut.http.HttpResponse;
 import io.micronaut.http.MediaType;
 import io.micronaut.http.annotation.*;
+import nl.terrax.tbrestmongodb.model.Beer;
+import nl.terrax.tbrestmongodb.service.BeerService;
 
 import java.util.List;
 
@@ -39,7 +39,6 @@ public class BeerController {
     @Delete("/{beerName}")
     @Produces(MediaType.TEXT_PLAIN)
     public HttpResponse<String> deleteBeer(@PathVariable("beerName") String name) {
-        Beer beer = beerService.findByName(name);
         beerService.deleteBeer(beerService.findByName(name).getId());
         return HttpResponse.ok("Beer deleted successfully");
     }

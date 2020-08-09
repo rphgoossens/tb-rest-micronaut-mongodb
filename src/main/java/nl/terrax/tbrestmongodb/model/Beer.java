@@ -1,8 +1,9 @@
-package nl.terrax.tbrestmongodb.domain;
+package nl.terrax.tbrestmongodb.model;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import org.bson.types.ObjectId;
 
+@SuppressWarnings("unused")
 public class Beer {
 
     @JsonIgnore

@@ -1,6 +1,6 @@
 package nl.terrax.tbrestmongodb.repository;
 
-import nl.terrax.tbrestmongodb.domain.Beer;
+import nl.terrax.tbrestmongodb.model.Beer;
 import io.reactivex.Maybe;
 import io.reactivex.Single;
 import org.bson.types.ObjectId;

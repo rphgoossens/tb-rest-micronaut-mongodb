@@ -1,5 +1,6 @@
-package nl.terrax.tbrestmongodb.domain;
+package nl.terrax.tbrestmongodb.model;
 
+@SuppressWarnings("unused")
 public class Brewery {
     private String name;
     private String country;

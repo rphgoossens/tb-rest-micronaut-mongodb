@@ -2,7 +2,7 @@ package nl.terrax.tbrestmongodb.repository;
 
 import com.mongodb.reactivestreams.client.MongoClient;
 import com.mongodb.reactivestreams.client.MongoCollection;
-import nl.terrax.tbrestmongodb.domain.Beer;
+import nl.terrax.tbrestmongodb.model.Beer;
 import io.reactivex.Flowable;
 import io.reactivex.Maybe;
 import io.reactivex.Single;
@@ -26,11 +26,9 @@ public class BeerRepositoryImpl implements BeerRepository {
 
     @Override
     public Single<Beer> create(@NotNull Beer beer) {
-        Single<Beer> map = Single.fromPublisher(
+        return Single.fromPublisher(
                 getCollection().insertOne(beer)
         ).map(success -> beer);
-
-        return map;
     }
 
     @Override
