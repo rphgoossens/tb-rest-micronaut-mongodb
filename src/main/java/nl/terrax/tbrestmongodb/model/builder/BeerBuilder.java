@@ -5,6 +5,8 @@ import nl.terrax.tbrestmongodb.model.Beer;
 import nl.terrax.tbrestmongodb.model.Brewery;
 import org.bson.types.ObjectId;
 
+import java.util.Objects;
+
 public class BeerBuilder {
     private String id;
     private String name;
@@ -26,6 +28,10 @@ public class BeerBuilder {
     }
 
     public Beer createBeer() {
-        return new Beer(new ObjectId(id), name, brewery);
+        if (Objects.isNull(id)) {
+            return new Beer(null, name, brewery);
+        } else {
+            return new Beer(new ObjectId(id), name, brewery);
+        }
     }
 }
