@@ -55,6 +55,11 @@
             <scope>compile</scope>
         </dependency>
         <dependency>
+            <groupId>io.swagger.core.v3</groupId>
+            <artifactId>swagger-annotations</artifactId>
+            <scope>compile</scope>
+        </dependency>
+        <dependency>
             <groupId>io.micronaut.mongodb</groupId>
             <artifactId>micronaut-mongo-reactive</artifactId>
             <scope>compile</scope>
@@ -140,10 +145,16 @@
                             <artifactId>micronaut-validation</artifactId>
                             <version>${micronaut.version}</version>
                         </path>
+                        <path>
+                            <groupId>io.micronaut.configuration</groupId>
+                            <artifactId>micronaut-openapi</artifactId>
+                            <version>${micronaut.openapi.version}</version>
+                        </path>
                     </annotationProcessorPaths>
                     <compilerArgs>
                         <arg>-Amicronaut.processing.group=nl.terrax.tbrestmongodb</arg>
                         <arg>-Amicronaut.processing.module=tb-rest-micronaut-mongodb</arg>
+                        <arg>-Amicronaut.openapi.config.file=${project.basedir}/openapi.properties</arg>
                     </compilerArgs>
                 </configuration>
                 <executions>
