@@ -151,7 +151,7 @@ class BeerControllerTest {
 
 
     @MockBean(BeerService.class)
-    BeerService mathBeerService() {
+    BeerService mockBeerService() {
         return mock(BeerService.class);
     }
 

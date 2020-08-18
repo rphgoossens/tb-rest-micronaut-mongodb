@@ -154,7 +154,7 @@
                     <compilerArgs>
                         <arg>-Amicronaut.processing.group=nl.terrax.tbrestmongodb</arg>
                         <arg>-Amicronaut.processing.module=tb-rest-micronaut-mongodb</arg>
-                        <arg>-Amicronaut.openapi.config.file=${project.basedir}/openapi.properties</arg>
+                            <arg>-Amicronaut.openapi.config.file=${project.basedir}/openapi.properties</arg>
                     </compilerArgs>
                 </configuration>
                 <executions>
