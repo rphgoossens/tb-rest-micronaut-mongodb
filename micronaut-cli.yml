@@ -3,4 +3,4 @@ defaultPackage: nl.terrax.tbrestmongodb
 testFramework: junit
 sourceLanguage: java
 buildTool: maven
-features: [app-name, docker, file-watch, http-client, java, java-application, junit, logback, maven, mongo-reactive, netty-server, openapi, readme, shade, yaml]
+features: [app-name, docker, file-watch, http-client, java, java-application, junit, logback, maven, mongo-reactive, netty-server, openapi, readme, shade, testcontainers, yaml]
