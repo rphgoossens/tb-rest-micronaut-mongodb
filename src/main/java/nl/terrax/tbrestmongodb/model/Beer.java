@@ -1,9 +1,11 @@
 package nl.terrax.tbrestmongodb.model;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
+import io.micronaut.core.annotation.Introspected;
 import org.bson.types.ObjectId;
 
 @SuppressWarnings("unused")
+@Introspected
 public class Beer {
 
     @JsonIgnore
