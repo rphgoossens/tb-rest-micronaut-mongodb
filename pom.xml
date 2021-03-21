@@ -61,13 +61,6 @@
             <artifactId>micronaut-mongo-reactive</artifactId>
             <scope>compile</scope>
         </dependency>
-        <!-- added -->
-        <dependency>
-            <groupId>io.micronaut.data</groupId>
-            <artifactId>micronaut-data-tx</artifactId>
-            <scope>compile</scope>
-        </dependency>
-        <!-- end of added -->
         <dependency>
             <groupId>ch.qos.logback</groupId>
             <artifactId>logback-classic</artifactId>
@@ -136,7 +129,6 @@
                 <configuration>
                     <!-- Uncomment to enable incremental compilation -->
                     <!-- <useIncrementalCompilation>false</useIncrementalCompilation> -->
-
                     <annotationProcessorPaths combine.children="append">
                         <path>
                             <groupId>io.micronaut</groupId>
