@@ -1,6 +1,9 @@
 package nl.terrax.tbrestmongodb.model;
 
+import io.micronaut.core.annotation.Introspected;
+
 @SuppressWarnings("unused")
+@Introspected
 public class Brewery {
     private String name;
     private String country;

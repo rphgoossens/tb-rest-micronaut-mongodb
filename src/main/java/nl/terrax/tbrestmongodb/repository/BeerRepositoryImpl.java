@@ -2,10 +2,10 @@ package nl.terrax.tbrestmongodb.repository;
 
 import com.mongodb.reactivestreams.client.MongoClient;
 import com.mongodb.reactivestreams.client.MongoCollection;
-import nl.terrax.tbrestmongodb.model.Beer;
 import io.reactivex.Flowable;
 import io.reactivex.Maybe;
 import io.reactivex.Single;
+import nl.terrax.tbrestmongodb.model.Beer;
 import org.bson.types.ObjectId;
 
 import javax.inject.Singleton;
