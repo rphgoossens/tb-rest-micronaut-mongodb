@@ -28,7 +28,7 @@ Creating the native image is done like this:
 mvn clean package -Dpackaging=native-image
 ```
 Then you can run it
-./target/
+./target/tb-rest-micronaut-mongodb
 
 ## Micronaut 2.4.0 Documentation
 
